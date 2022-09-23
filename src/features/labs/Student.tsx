@@ -1,4 +1,4 @@
-import { IStudent } from "../../models";
+import { IStudent } from "@/models";
 
 export interface StudentProps {
   student: IStudent;

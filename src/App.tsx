@@ -1,7 +1,7 @@
 import "./App.css";
 import { Footer, Header } from "./components/common";
 import { Student } from "./features/labs/Student";
-import { IStudent } from "./models";
+import { IStudent } from "@/models";
 
 function App() {
   const handleOnClick = () => {};
