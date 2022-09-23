@@ -3,5 +3,4 @@ export interface IStudent {
   age: number;
   isHero?: boolean;
   hobbyList?: string[];
-  onClick: () => void;
 }

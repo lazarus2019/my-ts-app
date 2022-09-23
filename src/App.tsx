@@ -4,18 +4,19 @@ import { Student } from "./features/labs/Student";
 import { IStudent } from "@/models";
 
 function App() {
-  const handleOnClick = () => {};
-
   const krix: IStudent = {
     name: "Krix",
     age: 20,
-    onClick: handleOnClick,
   };
+
+  function handleStudentClick(student: IStudent) {
+    console.log("student click", student);
+  }
 
   return (
     <div className="App">
       <Header />
-      <Student student={krix} />
+      <Student student={krix} onClick={handleStudentClick} />
       <Footer />
     </div>
   );
