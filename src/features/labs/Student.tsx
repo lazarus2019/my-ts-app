@@ -1,13 +1,14 @@
+import { IStudent } from "../../models";
+
 export interface StudentProps {
-  name?: string;
-  age: number;
-  isHero?: boolean;
+  student: IStudent;
 }
 
-export function Student({ name = "Kevin", isHero = false }: StudentProps) {
+export function Student({ student }: StudentProps) {
+  const { name, isHero } = student;
   return (
     <div>
-      {name} {isHero ? "hero" : "no-hero"}
+      Student: {name} {isHero ? "hero" : "no-hero"}
     </div>
   );
 }
